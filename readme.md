@@ -1,0 +1,60 @@
+# Large Language Model Moral Reasoning and Questionnaire Performance Evaluation Project
+
+## Project Overview
+
+This project aims to evaluate the performance of different large language models in the areas of moral reasoning and questionnaire responses. By designing 4 research questions (RQs), we use specific questionnaires and moral dilemma scenarios to test the models' responses, decision-making, and reasoning abilities, and record and expert-evaluate the results.
+
+## Research Questions (RQs)
+
+### RQ1: To what extent do teacher SP LLMs exhibit personality traits consistent with real.world teachers? 
+
+This research question evaluates the performance of large language models on the CPST-E and HEXACO-60 questionnaires. By having the models act as a "teacher" and use a 7-point Likert scale to rate how closely the descriptions in the questionnaires align with their personality, we analyze the models' response patterns on these personality and ability assessment questionnaires.
+
+Relevant Code:
+- `Code/RQ1-CPST-E.py`: Script for processing the CPST-E questionnaire.
+- `Code/RQ1-HEXACO60.py`: Script for processing the HEXACO-60 questionnaire.
+
+### RQ2: What moral development stages areexhibited by various LLMs in the teacher SP?
+
+This research question evaluates the decision-making and reasoning ability of large language models when faced with moral dilemma scenarios. Models are asked to act as a "teacher," read the moral dilemma scenario, and describe their decision and the reasons behind it.
+
+Relevant Code:
+- `Code/RQ2.py`: Script for processing moral dilemma scenarios.
+
+### RQ3: Under soft prompt injection, do teacher SP LLMs exhibit unethical or harmful responses?
+
+This research question evaluates the response ability and consistency of large language models when given a specific role (defined by a soft prompt) and a student statement.
+
+Relevant Code:
+- `Code/RQ3.py`: Script for processing prompts with roles and student statements.
+
+### RQ4: How do the hyperparameters ofLLMs affect the personality traits, moral de-velopment stages, and ethical risk behaviors ofteacher SP LLMs?
+
+The answers for RQ4 were obtained during the execution of RQ1-3. There are no separate code files in this project corresponding to RQ4. Detailed information and results regarding RQ4 can be found in the relevant paper.
+
+## Data Files
+
+The `Questionnaires/` directory contains the questionnaire and prompt data files used in the project:
+- `Questionnaires/CPST-E.xlsx`: CPST-E questionnaire data.
+- `Questionnaires/HEXACO-60_Question.xlsx`: HEXACO-60 questionnaire data.
+- `Questionnaires/RQ2_Moral_Dilemmas.xlsx`: RQ2 moral dilemma scenario data.
+- `Questionnaires/RQ3_prompts.xlsx`: RQ3 prompt and student statement data.
+
+## Code Files
+
+The `Code/` directory contains the Python scripts used for running evaluations and processing data:
+- `Code/requirements.txt`: List of required Python dependencies for the project.
+- `Code/RQ1-CPST-E.py`: RQ1 CPST-E evaluation script.
+- `Code/RQ1-HEXACO60.py`: RQ1 HEXACO-60 evaluation script.
+- `Code/RQ2.py`: RQ2 moral dilemma evaluation script.
+- `Code/RQ3.py`: RQ3 role-playing and student statement response evaluation script.
+
+## Running the Project
+
+To run the scripts in the project, you first need to install the required Python dependencies. You can install them using the following command:
+
+```bash
+pip install -r Code/requirements.txt
+```
+
+Then, run the appropriate Python script in the `Code/` directory as needed (e.g., `python Code/RQ1-CPST-E.py`). Please note that the scripts require configuration of the model ID, API key, and base URL to interact with large language model APIs.
