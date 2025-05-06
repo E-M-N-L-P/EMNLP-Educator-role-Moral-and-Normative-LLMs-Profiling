@@ -1,4 +1,4 @@
-# Large Language Model Moral Reasoning and Questionnaire Performance Evaluation Project
+# EMNLP: Educator role Moral and Normative LLMs Profiling
 
 ## Project Overview
 
