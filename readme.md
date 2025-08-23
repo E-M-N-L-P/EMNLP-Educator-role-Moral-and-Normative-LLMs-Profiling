@@ -1,5 +1,8 @@
 # EMNLP: Educator role Moral and Normative LLMs Profiling
 
+[![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue)](https://huggingface.co/datasets/yuzengyi/EMNLP)
+[![arXiv](https://img.shields.io/badge/arXiv-2508.15250-b31b1b.svg)](https://arxiv.org/abs/2508.15250)
+
 ## Project Overview
 
 This project aims to evaluate the performance of different large language models in the areas of moral reasoning and questionnaire responses. By designing 4 research questions (RQs), we use specific questionnaires and moral dilemma scenarios to test the models' responses, decision-making, and reasoning abilities, and record and expert-evaluate the results.
